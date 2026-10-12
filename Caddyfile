@@ -1,0 +1,12 @@
+{
+	email {$ACME_EMAIL}
+}
+
+{$LANGFUSE_DOMAIN} {
+	encode zstd gzip
+	reverse_proxy langfuse-web:3000
+}
+
+{$S3_DOMAIN} {
+	reverse_proxy minio:9000
+}

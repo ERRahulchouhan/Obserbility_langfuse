@@ -1,0 +1,8 @@
+streamlit>=1.40,<2
+scikit-learn>=1.5,<2
+openai>=1.60,<3
+langfuse>=4,<5
+langchain>=0.3,<2
+python-dotenv>=1,<2
+pypdf>=5,<7
+pytest>=8,<9

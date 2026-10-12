@@ -1,0 +1,9 @@
+Method	Kya karta hai	RAG me kahan use
+get_client()	Langfuse client deta hai	Application startup
+@observe()	Function ko automatically trace/observation karta hai	Full RAG pipeline
+start_as_current_observation()	Manually ek child step create karta hai	Retrieval, reranker, guardrail
+observation.update()	Existing observation me input/output/metadata add karta hai	Retrieved docs, scores etc.
+update_current_trace()	Current trace ki information update karta hai	user/session/tags
+update_current_observation()	Current observation ko update karta hai	input/output/metadata
+CallbackHandler()	LangChain calls automatically trace karta hai	LLM/chain/retriever calls
+flush()	Pending traces Langfuse ko bhejta hai	S
